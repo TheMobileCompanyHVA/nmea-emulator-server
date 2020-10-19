@@ -11,15 +11,15 @@ const val port: Int = 5000
 const val interval: Long = 1000
 val sentences = listOf(
     "\$SDDBT,25.0,f,7.6,M,4.2,F*36\n\$SDDPT,7.6,0.3*55\n\$VWVHW,,,,,06.37,N,,\n\$VWVLW,000963,N,0956.8,N\n\$YXMTW,36.8,C*1F",
-    "\$SDDBT,25.0,f,8.6,M,4.2,F*36\n\$SDDPT,8.6,0.3*55\n\$VWVHW,,,,,06.27,N,,\n\$VWVLW,000962,N,0956.9,N\n\$YXMTW,36.8,C*1F",
-    "\$SDDBT,25.0,f,9.6,M,4.2,F*36\n\$SDDPT,9.6,0.3*55\n\$VWVHW,,,,,06.17,N,,\n\$VWVLW,000961,N,0956.0,N\n\$YXMTW,36.8,C*1F",
-    "\$SDDBT,25.0,f,10.6,M,4.2,F*36\n\$SDDPT,10.6,0.3*55\n\$VWVHW,,,,,06.07,N,,\n\$VWVLW,000960,N,0956.1,N\n\$YXMTW,36.8,C*1F",
-    "\$SDDBT,25.0,f,11.6,M,4.2,F*36\n\$SDDPT,11.6,0.3*55\n\$VWVHW,,,,,06.97,N,,\n\$VWVLW,000969,N,0956.2,N\n\$YXMTW,36.8,C*1F",
-    "\$SDDBT,25.0,f,12.6,M,4.2,F*36\n\$SDDPT,12.6,0.3*55\n\$VWVHW,,,,,06.87,N,,\n\$VWVLW,000968,N,0956.3,N\n\$YXMTW,36.8,C*1F",
-    "\$SDDBT,25.0,f,13.6,M,4.2,F*36\n\$SDDPT,13.6,0.3*55\n\$VWVHW,,,,,06.77,N,,\n\$VWVLW,000967,N,0956.4,N\n\$YXMTW,36.8,C*1F",
-    "\$SDDBT,25.0,f,14.6,M,4.2,F*36\n\$SDDPT,14.6,0.3*55\n\$VWVHW,,,,,06.67,N,,\n\$VWVLW,000966,N,0956.5,N\n\$YXMTW,36.8,C*1F",
-    "\$SDDBT,25.0,f,15.6,M,4.2,F*36\n\$SDDPT,15.6,0.3*55\n\$VWVHW,,,,,06.57,N,,\n\$VWVLW,000965,N,0956.6,N\n\$YXMTW,36.8,C*1F",
-    "\$SDDBT,25.0,f,16.6,M,4.2,F*36\n\$SDDPT,16.6,0.3*55\n\$VWVHW,,,,,06.47,N,,\n\$VWVLW,000964,N,0956.7,N\n\$YXMTW,36.8,C*1F"
+    "\$SDDBT,25.0,f,8.6,M,4.2,F*36\n\$SDDPT,8.6,0.3*55\n\$VWVHW,,,,,06.27,N,,\n\$VWVLW,000962,N,0956.9,N\n\$YXMTW,36.7,C*1F",
+    "\$SDDBT,25.0,f,9.6,M,4.2,F*36\n\$SDDPT,9.6,0.3*55\n\$VWVHW,,,,,06.17,N,,\n\$VWVLW,000961,N,0956.0,N\n\$YXMTW,36.6,C*1F",
+    "\$SDDBT,25.0,f,10.6,M,4.2,F*36\n\$SDDPT,10.6,0.3*55\n\$VWVHW,,,,,06.07,N,,\n\$VWVLW,000960,N,0956.1,N\n\$YXMTW,36.5,C*1F",
+    "\$SDDBT,25.0,f,11.6,M,4.2,F*36\n\$SDDPT,11.6,0.3*55\n\$VWVHW,,,,,06.97,N,,\n\$VWVLW,000969,N,0956.2,N\n\$YXMTW,36.4,C*1F",
+    "\$SDDBT,25.0,f,12.6,M,4.2,F*36\n\$SDDPT,12.6,0.3*55\n\$VWVHW,,,,,06.87,N,,\n\$VWVLW,000968,N,0956.3,N\n\$YXMTW,36.3,C*1F",
+    "\$SDDBT,25.0,f,13.6,M,4.2,F*36\n\$SDDPT,13.6,0.3*55\n\$VWVHW,,,,,06.77,N,,\n\$VWVLW,000967,N,0956.4,N\n\$YXMTW,36.2,C*1F",
+    "\$SDDBT,25.0,f,14.6,M,4.2,F*36\n\$SDDPT,14.6,0.3*55\n\$VWVHW,,,,,06.67,N,,\n\$VWVLW,000966,N,0956.5,N\n\$YXMTW,36.1,C*1F",
+    "\$SDDBT,25.0,f,15.6,M,4.2,F*36\n\$SDDPT,15.6,0.3*55\n\$VWVHW,,,,,06.57,N,,\n\$VWVLW,000965,N,0956.6,N\n\$YXMTW,36.0,C*1F",
+    "\$SDDBT,25.0,f,16.6,M,4.2,F*36\n\$SDDPT,16.6,0.3*55\n\$VWVHW,,,,,06.47,N,,\n\$VWVLW,000964,N,0956.7,N\n\$YXMTW,36.9,C*1F"
 )
 
 fun main(args: Array<String>) {
@@ -48,8 +48,8 @@ class Server(client: Socket) {
         while (running) {
             try {
                 write(sentences[i])
-                if (i < sentences.size - 1) {
-                    i + 1
+                if (i < (sentences.size - 1)) {
+                    i += 1
                 } else {
                     i = 0
                 }
