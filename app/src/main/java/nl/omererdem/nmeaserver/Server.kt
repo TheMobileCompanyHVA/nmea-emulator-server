@@ -7,6 +7,8 @@ import java.net.Socket
 import java.nio.charset.Charset
 import kotlin.concurrent.thread
 
+const val port: Int = 5000
+const val interval: Long = 1000
 val sentences = listOf(
     "\$SDDBT,25.0,f,7.6,M,4.2,F*36\n\$SDDPT,7.6,0.3*55\n\$VWVHW,,,,,06.37,N,,\n\$VWVLW,000963,N,0956.8,N\n\$YXMTW,36.8,C*1F",
     "\$SDDBT,25.0,f,8.6,M,4.2,F*36\n\$SDDPT,8.6,0.3*55\n\$VWVHW,,,,,06.27,N,,\n\$VWVLW,000962,N,0956.9,N\n\$YXMTW,36.8,C*1F",
@@ -21,7 +23,7 @@ val sentences = listOf(
 )
 
 fun main(args: Array<String>) {
-    val server = ServerSocket(5000)
+    val server = ServerSocket(port)
     println("Server is running on port ${server.localPort}")
 
     while (true) {
@@ -51,7 +53,7 @@ class Server(client: Socket) {
                 } else {
                     i = 0
                 }
-                Thread.sleep(10000)
+                Thread.sleep(interval)
             } catch (e: Exception) {
                 shutdown()
             }
