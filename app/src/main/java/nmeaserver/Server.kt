@@ -1,4 +1,4 @@
-package nl.omererdem.nmeaserver
+package nmeaserver
 
 import java.io.OutputStream
 import java.lang.Exception
